@@ -7,16 +7,16 @@ foldermaker is an application that creates a workspace for you every-day files (
 When the question comes up “Hey, you worked on that project last March, do you still have those image files we used?”. The answer will (partly) be, “I’ll just search last March’s folder”.
 
 ## What does it do?
-It creates a folder every day, in a ‘ddMMyyyy’ format in the root of the D:. For example
+It creates a folder every day, in a ‘ddMMyyyy’ format in the user My Document folder. For example
 
 D:
 /2017
 
-       /01 Jan
-       /02 Feb
-       /03 Mar
+       /01 January
+       /02 February
+       /03 March
              /01032017
              /02032017
-             / 02032017 [your file(s) are here!]
+             /02032017 [your file(s) are here!]
 ## How does it work?
 This runs as a Windows service. The code writes a folder for the current year if it doesn’t exist, it writes the month in a ‘0n Mmm’ format if it doesn’t exist and the day in ‘ddMMyyyy’ format if (you guessed it) it doesn’t exist.
