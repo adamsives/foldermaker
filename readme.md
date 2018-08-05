@@ -9,7 +9,7 @@ When the question comes up “Hey, you worked on that project last March, do you
 ## What does it do?
 It creates a folder every day, in a ‘ddMMyyyy’ format in the user My Document folder. For example
 
-D:
+My Documents:
 /2017
 
        /01 January
