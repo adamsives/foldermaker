@@ -1,25 +1,19 @@
 option explicit
+On Error Resume Next
 
-Dim Documents, objFSO, objFolder, objSubFolder, objFile, strUser, wshshell, wshNetwork
+Dim Documents, objFSO, strUser, wshNetwork, wshshell
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set wshNetwork = CreateObject("WScript.Network")
 strUser = wshNetwork.Username
 
-
 Set wshshell = CreateObject("WScript.Shell")
 Documents = wshShell.SpecialFolders("MyDocuments")
 
-msgbox Documents+"\"+todaysFolder(now)
-
-objFSO.CreateFolder(Documents+"\"+todaysFolder(now))
-
-' date formatted as your request
-Function todaysFolder(dt)
-    dim d,m,y
-    d = right("0" & datePart("d",dt),2)
-    m = right("0" & datePart("m",dt),2)
-    y = datePart("yyyy",dt)
+dim d,m,y
+d = right("0" & datePart("d",now),2)
+m = right("0" & datePart("m",now),2)
+y = datePart("yyyy",now)
     
-    todaysFolder= y & "\" & m & " " & MonthName(datePart("m",dt),false) & "\" & d & m & y
-    
-End Function
+objFSO.CreateFolder(wshShell.SpecialFolders("MyDocuments")) & "\" & y & "\"
+objFSO.CreateFolder(wshShell.SpecialFolders("MyDocuments")) & "\" & y & "\" & m & " " & MonthName(datePart("m",now),false)
+objFSO.CreateFolder(wshShell.SpecialFolders("MyDocuments")) & "\" & y & "\" & m & " " & MonthName(datePart("m",now),false) & "\" & d & m & y
