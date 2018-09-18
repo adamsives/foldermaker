@@ -1,0 +1,9 @@
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\bin\Debug\pathWriter.exe.config
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\bin\Debug\pathWriter.exe
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\bin\Debug\pathWriter.pdb
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\obj\Debug\pathWriter.csproj.CoreCompileInputs.cache
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\obj\Debug\pathWriter.exe
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\obj\Debug\pathWriter.pdb
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\obj\Debug\pathWriter.csprojAssemblyReference.cache
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\adamsives\source\repos\pathWriter\pathWriter\obj\Debug\pathWriter.csproj.ResolveComReference.cache
